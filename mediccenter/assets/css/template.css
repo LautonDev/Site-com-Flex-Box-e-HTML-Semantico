@@ -270,11 +270,12 @@ footer {
   background-color: #1e1e1e;
   display: flex;
   justify-content: center;
+
 }
+
 
 .footer-menu {
   display: flex;
-  flex: 1;
 }
 
 .fm-1, .fm-2, .fm-3{
@@ -328,17 +329,16 @@ footer {
   color: #ffffff;
 }
 
-.flex-column {
-  flex-direction: column;
-}
-
 .footer-area {
   display: flex;
 }
 
 .footer-area-item {
-  flex: 1;
   color: #ffffff;
+}
+
+.flex-column {
+ flex-direction: column;
 }
 
 footer .widget-title-text{
@@ -354,4 +354,36 @@ footer .widget-title-text{
   margin-top: 30px;
 }
 
+.footer-column {
+  display: flex;
+}
+
+.footer-column p {
+  margin-top: 2px;
+  margin-right: 8px;
+  font-size: 10px;
+}
+
+.footer-column ul {
+  display: flex;
+  list-style: none;
+  font-size: 13px;
+  padding: 0;
+  margin-bottom: 0;
+  color: #bbbbbb;
+}
+
+.tweets-date {
+  margin-left: 18px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #39a9e1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
 

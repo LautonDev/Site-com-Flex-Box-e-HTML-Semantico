@@ -68,6 +68,7 @@ nav .active a, nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 .banner-headline h1 {
   color: #ffffff;
@@ -187,22 +188,20 @@ padding: 0;
 
 .widget-body-departaments {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  width: 330px;
-  height: 600px;
+  max-width: 330px;
 }
 
 .departaments {
-  width: 155px;
-  height: 155px;
+  width: 145px;
+  height: 145px;
   margin: 0 20px 20px 0;
   background-color: #39a9e1;
   object-fit: cover;
 }
 .departaments img {
-  width: 155px;
-  height: 155px;
+  width: 145px;
+  height: 145px;
   object-fit: cover;
   border: 2px solid #2b4c99;
   box-shadow: 8px 8px 5px #363535;
@@ -444,3 +443,22 @@ transition: 0.5s;
 opacity: 0.7;
 }
 
+@media screen and (max-width:600px) {
+
+  .banner-headline h1 {
+    font-size: 55px;
+  }
+
+  .banner-headline h2 {
+    font-size: 17px;
+  }
+
+  .banner-options {
+    height: 522px;
+    flex-direction: column;
+  }
+
+  .container-column
+
+  
+}ggnryredgoi

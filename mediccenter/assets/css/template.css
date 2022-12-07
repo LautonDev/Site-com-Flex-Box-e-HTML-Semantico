@@ -443,6 +443,18 @@ transition: 0.5s;
 opacity: 0.7;
 }
 
+.menuMobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 40px 20px 40px 0;
+}
+
+.mm-line {
+  background-color: #39a9e1;
+  height: 3px;
+}
+
 @media screen and (max-width:600px) {
 
   .banner-headline h1 {
@@ -454,11 +466,68 @@ opacity: 0.7;
   }
 
   .banner-options {
-    height: 522px;
+    height: auto;
     flex-direction: column;
   }
 
-  .container-column
+  #banner {
+    height: 990px;
+  }
 
-  
-}ggnryredgoi
+  .container {
+    flex-direction: column;
+  }
+
+  #geral section, #geral aside {
+    padding: 20px;
+  }
+
+  #geral .widget-body-departaments {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    align-content: stretch;
+    flex-wrap: wrap;
+    margin-left: 29px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+  .footer-area {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-copy {
+    padding-left: 10px;
+  }
+
+  header .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .logo {
+    padding: 20px;
+  }
+
+  .menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}

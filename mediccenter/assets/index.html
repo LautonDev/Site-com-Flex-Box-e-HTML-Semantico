@@ -9,6 +9,18 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
   </style>
+
+  <script type="text/javascript">
+  window.onload = function(){
+      document.querySelector(".menuMobile").addEventListener("click", function (){
+        if(document.querySelector(".menu nav ul").style.display == 'flex') {
+            document.querySelector(".menu nav ul").style.display = 'none';
+        }else {
+            document.querySelector(".menu nav ul").style.display = 'flex';
+          }
+      });
+  };
+  </script>
   <title>Medi Center</title>
 </head>
 
@@ -20,6 +32,11 @@
       </div>
       <div class="menu">
         <nav>
+          <div class="menuMobile">
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+          </div>
           <ul>
             <li class="active"><a href="#">home</a></li>
             <li><a href="#">home</a></li>
@@ -87,7 +104,7 @@
                 <div class="news-comments">2</div>
               </div>
               <div class="news-thumbnail">
-                <img src="/mediccenter/assets/images/a.jpg" alt="medico">
+                <span><img src="/mediccenter/assets/images/a.jpg" alt="medico">
               </div>
               <div class="news-title">
                 Lorem ipsum dolor sit amat velum

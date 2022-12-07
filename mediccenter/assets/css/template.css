@@ -189,22 +189,14 @@ padding: 0;
 .widget-body-departaments {
   display: flex;
   flex-wrap: wrap;
-  max-width: 330px;
-}
-#geral .widget-body-departaments {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  flex-wrap: wrap;
-  margin-left: 29px;
-  align-content: center;
 }
 
 .departaments {
-  margin: 0 20px 20px 0;
-  background-color: #39a9e1;
+  margin: 0 15px 15px 0;
+  background-color: #ffffff;
   object-fit: cover;
 }
+
 .departaments img {
   width: 145px;
   height: 145px;
@@ -433,6 +425,54 @@ margin: 17px 0 0 0;
   margin-top: 25px;
 }
 
+aside .make-list{
+  display: flex;
+}
+
+.make {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-right: 5px;
+  justify-content: space-around;
+
+}
+
+.make-text {
+  font-size: 14px;
+}
+
+.make-list img {
+  background-color: #bbbbbb;
+  width: 13px;
+  height: 13px;
+  padding: 6px;
+}
+
+.make-data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+aside .email{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2b4c99;
+  text-decoration: none;
+}
+
+aside .tel{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+aside .page {
+  color: #2b4c99;
+}
 
 .social img {
   background-color: #555555;
@@ -441,12 +481,6 @@ margin: 17px 0 0 0;
   padding: 6px;
   margin: 0 2px 0 0;
 
-}
-
-.social img:hover { 
-background-color: #ffffff; 
-transition: 0.5s;
-opacity: 0.7;
 }
 
 .menuMobile {
@@ -459,6 +493,33 @@ opacity: 0.7;
 .mm-line {
   background-color: #39a9e1;
   height: 3px;
+}
+
+@media screen and (max-width:768px) {
+  nav li {
+    font-size: 12px;
+  }
+
+  #geral {
+    margin-left: 10px;
+  }
+
+  #geral a{
+    height: 520px;
+  }
+
+  #geral .widget-body-departaments {
+    justify-content: center;
+  }
+
+  .footer-area {
+    margin-left: 10px;
+  }
+
+  .departaments {
+    margin-bottom: 30px;
+  }
+
 }
 
 @media screen and (max-width:600px) {
@@ -477,11 +538,16 @@ opacity: 0.7;
   }
 
   #banner {
-    height: 990px;
+    height: 511px;
+    background-size: 230% 120%;
   }
 
   .container {
     flex-direction: column;
+  }
+
+  #geral section {
+    margin-top: 250px;
   }
 
   #geral section, #geral aside {
@@ -535,5 +601,57 @@ opacity: 0.7;
     flex-direction: column;
     justify-content: space-around;
 
+  }
+
+  .departaments img {
+    width: 270px;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  header .container {
+    height: 57px;
+  }
+
+  .menuMobile {
+    height: 20px;
+    width: 20px;
+    padding: 18px;
+    margin: 0;
+  }
+
+  #geral section {
+    margin-left: 6px;
+    margin-top: 230px;
+    padding: 0;
+  }
+
+  .banner-headline h1{
+    font-size: 35px;
+  }
+
+  .banner-headline h2{
+    font-size: 14px;
+  }
+
+  .footer-area {
+    padding: 0;
+  }
+
+  .departaments img {
+    width: 270px;
+  }
+
+  #geral .widget {
+    padding-left: 20px;
+  }
+
+  #geral .widget-body-departaments {
+    margin-left: 0px;
+  }
+
+  #geral aside {
+    padding-top: 0;
   }
 }

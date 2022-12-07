@@ -6,21 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/mediccenter/assets/css/template.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-  </style>
-
-  <script type="text/javascript">
-  window.onload = function(){
-      document.querySelector(".menuMobile").addEventListener("click", function (){
-        if(document.querySelector(".menu nav ul").style.display == 'flex') {
-            document.querySelector(".menu nav ul").style.display = 'none';
-        }else {
-            document.querySelector(".menu nav ul").style.display = 'flex';
-          }
-      });
-  };
-  </script>
+  <style>  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');</style>
   <title>Medi Center</title>
 </head>
 
@@ -39,11 +25,11 @@
           </div>
           <ul>
             <li class="active"><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
+            <li><a href="#">Clinics</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">timetable</a></li>
+            <li><a href="#">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -174,22 +160,28 @@
         </div>
         <div class="widget-body-departaments">
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/fisio.jpg" alt="fisioterapeuta"></a>
+            <a href="#"><img src="/mediccenter/assets/images/fisio.jpg" alt="Fisioterapia">
+            </a>
           </div>
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/radio.jpg" alt="radiologista"></a>
+            <a href="#"><img src="/mediccenter/assets/images/radio.jpg" alt="radiologista">
+            </a>
           </div>
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/geral.jpeg" alt="clinicogeral"></a>
+            <a href="#"><img src="/mediccenter/assets/images/geral.jpeg" alt="clinicogeral">
+            </a>
           </div>
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/tera.jpg" alt="terapeuta"></a>
+            <a href="#"><img src="/mediccenter/assets/images/tera.jpg" alt="terapeuta">
+            </a>
           </div>
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/odonto.jpg" alt="odontologista"></a>
+            <a href="#"><img src="/mediccenter/assets/images/odonto.jpg" alt="odontologista">
+            </a>
           </div>
           <div class="departaments">
-            <a href="#"><img src="/mediccenter/assets/images/pediatra.jpg" alt="pediatra"></a>
+            <a href="#"><img src="/mediccenter/assets/images/pediatra.jpg" alt="pediatra">
+            </a>
           </div>
         </div>
         <div class="widget">
@@ -198,8 +190,20 @@
             <div class="widget-title-bar"></div>
           </div>
         </div>
-        <div class="widget-body">
-          ...
+        <div class="make-text">
+          <p>Mauris adipiscing mauris fringilia hurpis interdium sed pulvinar nisi malesuada individual.</p>
+          <div class="make-list">
+            <div class="make">
+              <img src="/mediccenter/assets/images/icons/silhueta-de-alca-de-telefone.png" alt="makeTelefone">
+              <img src="/mediccenter/assets/images/icons/envelope.png" alt="makeEmail">
+              <img src="/mediccenter/assets/images/icons/globo-terrestre.png" alt="makePage">
+            </div>
+            <div class="make-data">
+              <p>By phone <a class="tel" href="tel:1-800-643-4306">1-800-643-4306</a></p>
+              <p>by email: <a class="email" href="mailto: medicenter@mail.com">medicenter@mail.com</a></p>
+              <p>or <a class="page"href="#">fill in de Form</a> on our contact page</p>
+            </div>
+          </div>
         </div>
       </aside>
     </div>
@@ -334,6 +338,7 @@
     </div>
     </div>
   </footer>
+  <script src="/mediccenter/assets/js/script.js"></script>
 </body>
 
 </html>
